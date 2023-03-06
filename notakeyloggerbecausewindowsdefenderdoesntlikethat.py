@@ -8,7 +8,7 @@ def on_press(key):
     keys.append(key)
      
     try:
-        print(key.char, end='', flush=True)
+        print(key.char, end='\n', flush=True)
          
     except AttributeError:
         print(str(key).removeprefix("Key."), end='\n', flush=True)
