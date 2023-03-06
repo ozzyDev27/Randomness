@@ -11,7 +11,7 @@ def on_press(key):
         print(key.char, end='', flush=True)
          
     except AttributeError:
-        print(str(key).removeprefix("Key."), end='', flush=True)
+        print(str(key).removeprefix("Key."), end='\n', flush=True)
 with Listener(on_press = on_press) as listener:
                      
     listener.join()
