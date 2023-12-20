@@ -13,7 +13,7 @@ while score<30 and cpu<30:
     cpu+=cpuroll if cpuroll-1 else -cpu
     print(f"The current score is {score}-{cpu}")
     if input("Continue?\n> ").lower() in ("n","no"):
-        print("dumb loser")
+        print("Goodbye!")
         break
-while score>=30:print("You win! Finally something good in your life. Good job. You've wasted your time.")
-while cpu>=30:print("You lose! Still, everything is lost. You will never win. You've wasted your time.")
+while score>=30:print(f"You win! {score}-{cpu}")
+while cpu>=30:print(f"You lose! {score}-{cpu}")
